@@ -1,0 +1,124 @@
+.admin-customers {
+  min-height: 100vh;
+  padding: 130px 0 80px;
+  background: #f8fafc;
+}
+
+.admin-customers-container {
+  width: min(1180px, 92%);
+  margin: 0 auto;
+}
+
+.admin-customers-header {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 24px;
+  margin-bottom: 36px;
+}
+
+.admin-customers-label {
+  color: #0284c7;
+  font-weight: 800;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin: 0 0 10px;
+}
+
+.admin-customers-header h1 {
+  font-size: clamp(34px, 5vw, 56px);
+  color: #0f172a;
+  margin: 0 0 14px;
+}
+
+.admin-customers-header p {
+  color: #475569;
+  font-size: 17px;
+  line-height: 1.7;
+}
+
+.admin-customers-back {
+  text-decoration: none;
+  padding: 12px 20px;
+  border-radius: 999px;
+  background: #0284c7;
+  color: white;
+  font-weight: 800;
+  white-space: nowrap;
+}
+
+.admin-empty {
+  background: white;
+  padding: 38px;
+  border-radius: 26px;
+  box-shadow: 0 18px 45px rgba(15, 23, 42, 0.08);
+}
+
+.admin-empty h2 {
+  color: #0f172a;
+  margin: 0 0 12px;
+}
+
+.admin-empty p {
+  color: #475569;
+}
+
+.admin-table-wrapper {
+  overflow-x: auto;
+  background: white;
+  border-radius: 26px;
+  box-shadow: 0 18px 45px rgba(15, 23, 42, 0.08);
+}
+
+.admin-table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 1000px;
+}
+
+.admin-table th,
+.admin-table td {
+  padding: 18px;
+  text-align: left;
+  border-bottom: 1px solid #e2e8f0;
+  font-size: 15px;
+  vertical-align: top;
+}
+
+.admin-table th {
+  background: #0f172a;
+  color: white;
+  font-weight: 800;
+}
+
+.admin-table td {
+  color: #334155;
+}
+
+.admin-table select {
+  padding: 9px 12px;
+  border-radius: 12px;
+  border: 1px solid #cbd5e1;
+  outline: none;
+}
+
+.admin-table button {
+  padding: 9px 14px;
+  border: none;
+  border-radius: 999px;
+  background: #ef4444;
+  color: white;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.admin-table button:hover {
+  background: #dc2626;
+}
+
+@media (max-width: 800px) {
+  .admin-customers-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
